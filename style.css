@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap');
+
+*{
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+}
+
+.fs-7-2{
+      font-size: 0.9rem;
+}
+.fs-7{
+      font-size: 0.8rem;
+}
+
+.fs-8{
+      font-size: 0.6rem;
+}
+
+.fb-img img{
+      margin: auto;
+      width: 30%;
+}
+
+.login{
+      max-width: 30rem;
+      width: 100%;
+}
+
+.links .login-links:hover{
+      text-decoration: underline;
+}
+
+.bg-grey{
+      background-color: #f0f5f9;
+}
+
+.footer-para p:hover{
+      text-decoration: underline;
+}
+
+
+.mobile-search{
+      position: relative;
+      right: 90%;
+}
+
+.side-bar{
+      overflow-y:scroll;
+}
+
+li footer a:hover{
+      text-decoration: underline  !important; 
+}
+
+.timeline{
+      box-sizing: border-box;
+}
+
+.stories:hover{
+      opacity: 0.8;
+}
+
+.like-btn span:hover{
+      background: rgb(201, 196, 196);
+      border-radius: 5px;
+}
+    
+.right-icons i:hover{
+    background: grey;
+}
+

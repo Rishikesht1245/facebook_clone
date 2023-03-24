@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>log into facebook</title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="style.css">
+
+      <!-- icon -->
+      <link rel="icon" href="images/facebook-logo-2019.ico">
+
+      <!-- Bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+      
+      <!-- Bootstrap icon -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-grey">
+
+      <!-- =============== Login Page ========================= -->
+
+      <div class="container text-center mt-lg-5">
+            <div class="fb-img mx-auto my-3">
+                  <img class="mx-auto" src="images/facebook.svg" alt="">
+
+                  <div class="login width-sm-100 m-auto">
+                        <div class="bg-white shadow rounded p-3 input-group-lg col-sm-12 w-sm-100">
+                              <p class="fs-6 fw-bold">Log in to Facebook</p>
+                              <input type="email" name="username" id="username" class="form-control my-3 fw-bold fs-6 fs-sm-7" placeholder="Email address or phone number"> 
+                              <input type="password" name="password" id="password" class="form-control my-3 fw-bold fs-6 fs-sm-7" placeholder="Password"> 
+                              <a href="">
+                                    <button class="btn btn-primary w-100 my-3 fw-bold py-2" onclick="user1()" type="submit">Log in</button>
+                              </a>
+                              <div class="links d-flex ps-2 fw-bold">
+                                    <a href="#exampleModal2" class="text-decoration-none" data-bs-toggle="modal">
+                                          <p class="text-primary forgot-links pe-2 login-links fs-7">Forgotten account?</p>
+                                    </a>
+                                    <button class="border-0 bg-white fw-bold" data-bs-toggle="modal" data-bs-target="#createModal">
+                                          <p class="text-primary forgot-links login-links fs-7">Sign up for Facebook</p>
+                                    </button>
+
+                                    <!-- =========== Modal Sign Up Start ============== -->
+                                    <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog">
+                                            <div class="modal-content">
+
+                                                <!-- ==== Model Head ===== -->
+                                              <div class="modal-header">
+                                                <div class="text-center mx-auto ps-lg-5">
+                                                      <img class="mx-auto" src="images/facebook.svg" alt="">
+                                                      <h2 class="modal-title fs-3 text-center" id="createModalLabel">Create a new account</h2>
+                                                      <p class="text-muted">It's quick and easy.</p>
+                                                </div>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                              </div>
+
+                                              <!-- === Modal Body ==== -->
+                                              <div class="modal-body">
+                                                    <!-- name -->
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <input type="text" placeholder="First name" class="p-2 form-control">
+                                                        </div>
+                                                        <div class="col">
+                                                            <input type="text" placeholder="Surname" class="p-2 form-control">
+                                                        </div>
+                                                    </div>
+                                                    <!-- email and password -->
+                                                    <input type="email" placeholder="Email address or phone number" class="p-2 form-control my-3">
+                                                    <input type="password" placeholder="New password" class="p-2 form-control my-3">
+                                                    <!-- DOB -->
+                                                    <div class="row my-3">
+                                                        <span class="text-muted fs-7 text-start ps-3 mb-2">Date of birth <i type="button" class="fa-solid fa-circle-question" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="More details"></i></span>
+                                                        <div class="col">
+                                                             <select class="form-select">
+                                                              <option value="1">1</option>
+                                                              <option value="2">2</option>
+                                                              <option value="3">3</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col">
+                                                            <select class="form-select">
+                                                             <option value="Jan">Jan</option>
+                                                             <option value="Feb">Feb</option>
+                                                             <option value="Mar">Mar</option>
+                                                            </select>
+                                                       </div>
+                                                       <div class="col">
+                                                            <select class="form-select">
+                                                             <option value="2000">2000</option>
+                                                             <option value="2001">2001</option>
+                                                             <option value="2002">2002</option>
+                                                            </select>
+                                                       </div>
+                                                    </div>
+                                                    <!-- Gender -->
+                                                    <div class="row my-3">
+                                                           <span class="text-muted fs-7 text-start ps-3 mb-2">Gender <i type="button" class="fa-solid fa-circle-question" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Gender details"></i></span>
+                                                           <div class="col">
+                                                              <!-- Radio -->
+                                                              <div class="border rounded py-2 py-2">
+                                                                  <label class="form-check-label text-muted" for="flexRadioDefault1">
+                                                                       Female
+                                                                  </label>
+                                                                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                                               </div>
+                                                           </div>
+                                                           <div class="col">
+                                                            <!-- Radio -->
+                                                            <div class="border rounded py-2">
+                                                                <label class="form-check-label text-muted" for="flexRadioDefault2">
+                                                                     Male
+                                                                </label>
+                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                                             </div>
+                                                         </div>
+                                                         <div class="col">
+                                                            <!-- Radio -->
+                                                            <div class="border rounded py-2">
+                                                                <label class="form-check-label text-muted" for="flexRadioDefault3">
+                                                                     Custom
+                                                                </label>
+                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                                                             </div>
+                                                         </div>
+                                                    </div>
+                                                    <!-- Gender Select -->
+                                                    <div class="d-none" id="genderSelect">
+                                                         <select class="form-select">
+                                                            <option value="0" disabled selected>Select your pronoun</option>
+                                                            <option value="1">She</option>
+                                                            <option value="1">He</option>
+                                                            <option value="1">They</option>
+                                                         </select>
+                                                         <div class="my-3">
+                                                              <span class="fs-7 text-muted">Your pronoun is visible to everyone.</span>
+                                                              <input type="text" class="form-control" placeholder="Gender (Optional)">
+                                                         </div>
+                                                    </div>
+                                                    <!-- paragraph -->
+                                                    <div class="text-start">
+                                                          <span class="text-muted fs-8">People who use our service may have uploaded your contact information to Facebook. Learn more.</span><br>
+                                                          <span class="text-muted fs-8">By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS notifications from us and can opt out at any time.</span>
+                                                    </div>
+                                                    <!-- button -->
+                                                    <button type="button" class="btn btn-success my-3 mx-auto w-50 d-block">Sign Up</button>
+                                                    <!-- link -->
+                                                    <a href="index.html" class="text-decoration-none fs-7">Already have an account?</a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <!-- ============= Modal Sign Up End ========== -->
+
+                                    <!-- ============= Modal Forgot Password Start ============ -->
+                                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Find Your Account</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                              </div>
+                                              <div class="modal-body">
+                                                <p class="text-muted">Please enter your email address or mobile number to search for your account.</p>
+                                                <input type="email" class="form-control my-4 fs-7" placeholder="Email address or phone number"> 
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                                <button type="button" class="btn btn-primary">Search</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+
+                                    <!-- ============= Modal Forgot Password End =============== -->
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+      <!-- =========================== Footer =============================== -->
+      <footer class="bg-white p-4 container-fluid mt-5 text-center">
+            <div class="container">
+                   <!-- language -->
+                  <div class="row flex flex-wrap footer-para">
+                        <p class="mx-2 fs-7 mb-0 col">English</p>
+                        <p class="mx-2 fs-7 mb-0 col">മലയാളം</p>
+                        <p class="mx-2 fs-7 mb-0 col">தமிழ்</p>
+                        <p class="mx-2 fs-7 mb-0 col">हिन्दी</p>
+                        <p class="mx-2 fs-7 mb-0 col">ಕನ್ನಡ</p>
+                  </div>
+                  <hr />
+                   <!-- actions -->
+                   <div class="row flex flex-wrap footer-para">
+                        <p class="mx-2 fs-7 mb-0 col">Sign Up</p>
+                        <p class="mx-2 fs-7 mb-0 col">Login</p>
+                        <p class="mx-2 fs-7 mb-0 col">Messenger</p>
+                        <p class="mx-2 fs-7 mb-0 col">Facebook Lite</p>
+                        <p class="mx-2 fs-7 mb-0 col">Watch</p>
+                  </div>
+                   <!-- Copyright -->
+                   <div class="mt-4 mx-2">
+                        <p class="fs-7 text-center">Facebook &copy 2023</p>
+                   </div>
+
+            </div>
+      </footer>
+     
+     
+      <!-- Bootstrap -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+     
+      <!-- Bootstrap JS popper -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+     
+      <!-- Main.js  -->
+      <script src="main.js"></script>
+</body>
+</html>
